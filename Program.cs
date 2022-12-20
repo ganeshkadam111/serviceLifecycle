@@ -1,4 +1,5 @@
 using ServiceLifecycle;
+using ServiceLifecycle.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +11,7 @@ builder.Services.AddSingleton<ISingletonService, OperationService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -25,6 +27,9 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+//used custom middleware
+app.UseLogUrl();
 
 app.MapControllerRoute(
     name: "default",
