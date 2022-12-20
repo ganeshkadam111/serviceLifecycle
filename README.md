@@ -35,3 +35,17 @@ That is why operation Ids are the same for first instance as well as second inst
  
 In the case of **Singleton service**, only one instance is created and shared across applications. 
 If we click on refresh button or load the UI on the different tab of a browser (which is nothing but Request 2), those ids will remain the same.
+
+# Custom Middleware
+
+**1. Creating a Custom Middleware** 
+ Middleware is generally encapsulated in a class and exposed with an extension method. The custom middleware can be built with a class with InvokeAsync() method and RequestDelegate type parameter in the constructor. RequestDelegate type is required in order to execute the next middleware in a sequence.
+ Let’s consider an example where we need to create custom middleware to log a request URL in a web application.
+ 
+ ![image](https://user-images.githubusercontent.com/40893318/208640629-c7449b93-b92d-4440-8bd3-c1d071ff7115.png)
+
+ ![image](https://user-images.githubusercontent.com/40893318/208640537-467a4b61-dd6e-4278-bcb9-bcbb4ae3c0f2.png)
+
+
+In program.cs class:
+![image](https://user-images.githubusercontent.com/40893318/208641003-76c2a6dc-4876-4a01-be5e-82c19939ddb5.png)
