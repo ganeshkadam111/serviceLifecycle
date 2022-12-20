@@ -48,7 +48,4 @@ If we click on refresh button or load the UI on the different tab of a browser (
 
 
 In program.cs class:
-**app.UseLogUrl();**
-
-
-**2. ** 
+![image](https://user-images.githubusercontent.com/40893318/208641003-76c2a6dc-4876-4a01-be5e-82c19939ddb5.png)
