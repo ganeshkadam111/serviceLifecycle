@@ -1,4 +1,4 @@
-﻿namespace ServiceLifecycle
+﻿namespace ServiceLifecycleDemo
 {
     public interface ISingletonService
     {

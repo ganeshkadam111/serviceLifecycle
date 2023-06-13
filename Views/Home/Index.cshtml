@@ -1,6 +1,7 @@
 ﻿@{
-	ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Page";
 }
+
 
 <div class="text-center">
 	<h2 class="display-4">
@@ -21,26 +22,26 @@
 				Transient
 			</td>
 			<td style="background-color: darksalmon">
-				@ViewBag.transientServiceObject1
+				@ViewBag.transient1
 			</td>
 			<td style="background-color: darksalmon">
-				@ViewBag.transientServiceObject2
+				@ViewBag.transient2
 			</td>
 		</tr>
 		<tr>
 			<td>Scoped</td>
-			<td>@ViewBag.scopedServiceObject1</td>
-			<td>@ViewBag.scopedServiceObject2</td>
+			<td>@ViewBag.scoped1</td>
+			<td>@ViewBag.scoped2</td>
 		</tr>
 		<tr>
 			<td style="background-color: aquamarine">
 				Singleton
 			</td>
 			<td style="background-color: aquamarine">
-				@ViewBag.singletonServiceObject1
+				@ViewBag.singleton1
 			</td>
 			<td style="background-color: aquamarine">
-				@ViewBag.singletonServiceObject2
+				@ViewBag.singleton2
 			</td>
 		</tr>
 	</tbody>

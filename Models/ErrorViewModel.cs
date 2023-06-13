@@ -1,4 +1,4 @@
-namespace ServiceLifecycle.Models
+namespace ServiceLifecycleDemo.Models
 {
     public class ErrorViewModel
     {

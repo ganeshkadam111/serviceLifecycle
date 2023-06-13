@@ -1,6 +1,6 @@
-﻿namespace ServiceLifecycle
+﻿namespace ServiceLifecycleDemo
 {
-    public class OperationService: ITransientService, IScopedService, ISingletonService
+    public class OperationService : ITransientService, IScopedService, ISingletonService
     {
         Guid id;
         public OperationService()

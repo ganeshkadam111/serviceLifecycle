@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ServiceLifecycle.Models;
+using ServiceLifecycleDemo.Models;
 
-namespace ServiceLifecycle.Controllers
+namespace ServiceLifecycleDemo.Controllers
 {
     public class HomeController : Controller
     {
@@ -33,12 +33,12 @@ namespace ServiceLifecycle.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.transientServiceObject1 = _transientService1.GetOperationID().ToString();
-            ViewBag.transientServiceObject2 = _transientService2.GetOperationID().ToString();
-            ViewBag.scopedServiceObject1 = _scopedService1.GetOperationID().ToString();
-            ViewBag.scopedServiceObject2 = _scopedService2.GetOperationID().ToString();
-            ViewBag.singletonServiceObject1 = _singletonService1.GetOperationID().ToString();
-            ViewBag.singletonServiceObject2 = _singletonService2.GetOperationID().ToString();
+            ViewBag.transient1 = _transientService1.GetOperationID().ToString();
+            ViewBag.transient2 = _transientService2.GetOperationID().ToString();
+            ViewBag.scoped1 = _scopedService1.GetOperationID().ToString();
+            ViewBag.scoped2 = _scopedService2.GetOperationID().ToString();
+            ViewBag.singleton1 = _singletonService1.GetOperationID().ToString();
+            ViewBag.singleton2 = _singletonService2.GetOperationID().ToString();
             return View();
         }
 
