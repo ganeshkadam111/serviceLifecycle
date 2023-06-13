@@ -28,10 +28,10 @@ Request 2
 **Transient service** always returns a new instance even though it’s the same request, that is why operation Ids are
 different for first instance and second instance for both the requests (Request 1 and Request 2).
  
-In the case of **Scoped service**, a single instance is created per request and the same instance is shared across the request.
+**Scoped service**, a single instance is created per request and the same instance is shared across the request.
 That is why operation Ids are the same for first instance as well as second instance of Request 
 1. But if we click on refresh button or load the UI on different tab of a browser (which is nothing but Request 
 2. new ids are generated.
  
-In the case of **Singleton service**, only one instance is created and shared across applications. 
+**Singleton service**, only one instance is created and shared across applications. 
 If we click on refresh button or load the UI on the different tab of a browser (which is nothing but Request 2), those ids will remain the same.
